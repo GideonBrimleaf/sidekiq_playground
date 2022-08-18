@@ -1,0 +1,44 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    concurrent-ruby (1.1.10)
+    connection_pool (2.2.5)
+    et-orbi (1.2.7)
+      tzinfo
+    fugit (1.5.3)
+      et-orbi (~> 1, >= 1.2.7)
+      raabro (~> 1.4)
+    mustermann (1.1.2)
+      ruby2_keywords (~> 0.0.1)
+    raabro (1.4.0)
+    rack (2.2.4)
+    rack-protection (2.2.0)
+      rack
+    redis (4.7.1)
+    ruby2_keywords (0.0.5)
+    rufus-scheduler (3.7.0)
+      fugit (~> 1.1, >= 1.1.6)
+    sidekiq (6.5.4)
+      connection_pool (>= 2.2.2)
+      rack (~> 2.0)
+      redis (>= 4.5.0)
+    sinatra (2.2.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.2.0)
+      tilt (~> 2.0)
+    tilt (2.0.10)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
+
+PLATFORMS
+  x86_64-darwin-20
+
+DEPENDENCIES
+  rack
+  rufus-scheduler
+  sidekiq
+  sinatra
+
+BUNDLED WITH
+   2.2.19
